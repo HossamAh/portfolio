@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.42c8e4ef.css",
+    "main.js": "/portfolio/static/js/main.e7e40198.js",
+    "static/js/453.bb257cf5.chunk.js": "/portfolio/static/js/453.bb257cf5.chunk.js",
+    "static/media/me.jpeg": "/portfolio/static/media/me.8b7c2fb2495267a52a62.jpeg",
+    "static/media/hossamahmedResume.pdf": "/portfolio/static/media/hossamahmedResume.95e7c17832d165827082.pdf",
+    "static/media/background.jpeg": "/portfolio/static/media/background.84a3bc6417e82cf370d5.jpeg",
+    "static/media/github-color-svgrepo-com.svg": "/portfolio/static/media/github-color-svgrepo-com.e35c71752b296aa276f4.svg",
+    "static/media/email-svgrepo-com.svg": "/portfolio/static/media/email-svgrepo-com.432a085edc24c2a8622d.svg",
+    "static/media/linkedin-svgrepo-com.svg": "/portfolio/static/media/linkedin-svgrepo-com.c341cc1c307221b0fe42.svg",
+    "index.html": "/portfolio/index.html",
+    "static/media/close-circle-svgrepo-com (1).svg": "/portfolio/static/media/close-circle-svgrepo-com (1).96db005ea0dddf11cf1e.svg",
+    "main.42c8e4ef.css.map": "/portfolio/static/css/main.42c8e4ef.css.map",
+    "main.e7e40198.js.map": "/portfolio/static/js/main.e7e40198.js.map",
+    "453.bb257cf5.chunk.js.map": "/portfolio/static/js/453.bb257cf5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.42c8e4ef.css",
+    "static/js/main.e7e40198.js"
+  ]
+}
