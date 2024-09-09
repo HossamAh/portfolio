@@ -2,7 +2,6 @@ import { useRef } from "react";
 import { Link } from "react-router-dom";
 
 const Projects = ({ projectsList = [] }) => {
-    const project_item=useRef()
     function handleClick(e)
     {
         console.log(e)

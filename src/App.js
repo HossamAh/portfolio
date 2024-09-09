@@ -27,8 +27,8 @@ function App() {
     {url:Cpic,name:"C"},
   ];
   const [skillsState,setSkillsStatte] = useState(skillsList);
-  const projectsList = [{imageUrl:GITpic,url:"https://github.com/HossamAh/ReactJsSimpleCalculator",name:"calculator App", descripion:"simmple reactjs calculator project with simple operations"},
-  {imageUrl:Pythonpic,url:"https://github.com/HossamAh/Complete-Restaurant-project-",name:"calculator App", descripion:"simmple reactjs calculator project with simple operations"},
+  const projectsList = [{imageUrl:GITpic,url:"https://github.com/HossamAh/ReactJsSimpleCalculator",name:"calculator App", descripion:"simple reactjs calculator project with simple operations"},
+  {imageUrl:Pythonpic,url:"https://github.com/HossamAh/Complete-Restaurant-project-",name:"calculator App", descripion:"simple reactjs calculator project with simple operations"},
   ];
   const [projectsState,setProjectsStatte] = useState(projectsList);
   return (

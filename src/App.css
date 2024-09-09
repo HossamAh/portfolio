@@ -5,18 +5,21 @@
   font-size: 15px;
   line-height: 1.6;
   color: #fff;
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
   /* overflow: hidden; */
-  height: 100vh;
+  /* height: 150vh; */
+  /* max-height: 150%; */
   transition: all 300ms linear;
   background-image: url('./assets/images/background.jpeg');
   background-size: cover;
+  background-repeat: repeat-y;
 }
 main{
   flex: 1;
   display: flex;
   flex-direction: column;
+  height: 120vh;
 }
 Link {
   cursor: pointer;
@@ -281,12 +284,14 @@ text-align: center;
 
 
 .projects-section{
-  flex: 2;
+  flex: 3;
+  height: 100vh;
+  /* overflow: hidden; */
 }
 .projects-section .projects-container{
   width: 100%;
   height: 80%;
-  max-height: 90vh;
+  max-height: 80vh;
 
   display: flex;
   flex-direction: column;
@@ -299,12 +304,17 @@ text-align: center;
   align-self: center;
   flex: 1;
   display: flex;
-  flex-direction: column;
-  gap: 1vh;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2vw;
   justify-content: center;
   align-items: center;
 }
-
+.projects-section .projects-container .projects-grid .project-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .projects-section .projects-container .projects-grid .project-item img{
   height: fit-content;
   width: 50%;
