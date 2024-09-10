@@ -1,3 +1,7 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 .App {
   /* text-align: center; */
   font-family: 'Poppins', sans-serif;
@@ -5,21 +9,21 @@
   font-size: 15px;
   line-height: 1.6;
   color: #fff;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* overflow: hidden; */
-  /* height: 150vh; */
-  /* max-height: 150%; */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100vh;
+  max-height: 100%;
   transition: all 300ms linear;
   background-image: url('./assets/images/background.jpeg');
   background-size: cover;
   background-repeat: repeat-y;
 }
 main{
-  flex: 1;
+  flex: 1 0 90vh;
   display: flex;
   flex-direction: column;
-  height: 120vh;
+  height: 90vh;
 }
 Link {
   cursor: pointer;
@@ -37,6 +41,7 @@ Link:hover {
 } 
 .App-header {
   justify-self: flex-end;
+  flex: 0 0 10vh;
   /* justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: white;
@@ -58,10 +63,10 @@ Link:hover {
   color: white;
   text-align: center;
   text-decoration: none;
-  margin-top: 10px;
+  margin-top: 5px;
   margin-right: 15px;
-  margin-bottom: 25px;
-  padding: 10px;
+  margin-bottom: 5px;
+  padding: 5px;
 }
 .App-header nav .nav-item:hover{
   background-color: #866BAF;
@@ -284,7 +289,9 @@ text-align: center;
 
 
 .projects-section{
-  flex: 3;
+  align-self: center;
+  justify-self: center;
+  flex: 1 0 100vh;
   height: 100vh;
   /* overflow: hidden; */
 }
@@ -298,6 +305,7 @@ text-align: center;
   justify-content: stretch;
 }
 .projects-section .projects-container h2{
+  flex: 0 0 5vh;
   align-self: center;
 }
 .projects-section .projects-container .projects-grid{
@@ -309,17 +317,99 @@ text-align: center;
   gap: 2vw;
   justify-content: center;
   align-items: center;
+  width: 90%;
 }
+.projects-section .projects-container .projects-grid .project-section
+{
+  display: grid;
+  grid-template-columns: 46px 1fr 46px;
+  grid-template-rows: repeat(1,1fr);
+  grid-template-areas: "prevproject projectitem nextproject";
+  grid-gap: 5px;
+  width: 100%;
+}
+.projects-section .projects-container .projects-grid .project-section .prevProject{
+  grid-area: prevproject;
+  align-self: center;
+  height: 36px;
+  width: 36px;
+  align-self: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("./assets/images/icons8-arrow-64_L.png");
+  margin: 10px;
+  border: none;
+  /* mix-blend-mode: saturation; */
+  /* filter: saturate(2); */
+  cursor: pointer;
+
+}
+.projects-section .projects-container .projects-grid .project-section .nextProject{
+  grid-area: nextproject;
+  justify-self: center;
+  align-self: center;
+  height: 36px;
+  width: 36px;
+  align-self: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("./assets/images/icons8-arrow-64_R.png");
+  margin: 10px;
+  border: none;
+  /* mix-blend-mode: saturation;
+  filter: saturate(2); */
+  cursor: pointer;
+
+}
+
+
 .projects-section .projects-container .projects-grid .project-item{
+  grid-area: projectitem;
+  display: flex;
+  flex-direction: row;
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 20px;
+}
+
+.projects-section .projects-container .projects-grid .project-item  button{
+  height: 36px;
+  width: 36px;
+  align-self: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+  margin: 10px;
+  border: none;
+  
+}
+.projects-section .projects-container .projects-grid .project-item  .prevImage{
+  background-image: url("./assets/images/icons8-arrow-64_L.png");  
+}
+.projects-section .projects-container .projects-grid .project-item  .nextImage
+{
+  background-image: url("./assets/images/icons8-arrow-64_R.png");
+}
+.projects-section .projects-container .projects-grid .project-item .project {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 90%;
+  height: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+  cursor: pointer;
 }
-.projects-section .projects-container .projects-grid .project-item img{
-  height: fit-content;
-  width: 50%;
+.projects-section .projects-container .projects-grid .project-item .project img{
+  height: 100%;
+  width: 100%;
+  margin-top: 10px;
   margin-left: 10px;
   margin-right: 10px;
+  border-radius: 20px;
 }
 .projects-section .projects-container .projects-grid .project-item h3,
 .projects-section .projects-container .projects-grid .project-item p{
@@ -327,3 +417,56 @@ text-align: center;
 }
 
 
+.tooltip-next-project,
+.tooltip-prev-project,
+.tooltip-prev-image,
+.tooltip-next-image,
+.tooltip-show-github
+{
+  position: relative;
+}
+.tooltip-next-project::after,
+.tooltip-prev-project::after,
+.tooltip-prev-image::after,
+.tooltip-next-image::after,
+.tooltip-show-github::after{
+  
+  display: none; /* Hide the tooltip by default */ 
+  position: absolute; /* Position the tooltip relative to the button */ 
+  bottom: 100%; /* Position the tooltip above the button */ 
+   
+  transform: translateX(-50%); /* Center the tooltip horizontally */ 
+  background-color: #000; /* Tooltip background color */ 
+  color: #fff; /* Tooltip text color */ 
+  padding: 5px; /* Add some padding to the tooltip */ 
+  border-radius: 5px; /* Add rounded corners to the tooltip */ 
+  white-space: nowrap; /* Prevent line breaks in tooltip text */
+}
+.tooltip-next-project::after{
+  content: "next project"; /* The text to show in the tooltip */ 
+  left: 90%; /* Center the tooltip horizontally */
+}
+.tooltip-prev-project::after{
+  content: "previous project"; /* The text to show in the tooltip */ 
+  left: -30%; /* Center the tooltip horizontally */
+}
+.tooltip-prev-image::after{
+  content: "previous image"; /* The text to show in the tooltip */ 
+  left: 90%; /* Center the tooltip horizontally */
+}
+.tooltip-next-image::after{
+  content: "next image"; /* The text to show in the tooltip */ 
+  left: 90%; /* Center the tooltip horizontally */
+}
+.tooltip-show-github::after{
+  content: "click to view github repo";
+  bottom: 50%;
+  left: 50%; /* Center the tooltip horizontally */
+}
+.tooltip-next-project:hover::after,
+.tooltip-prev-project:hover::after,
+.tooltip-prev-image:hover::after,
+.tooltip-next-image:hover::after,
+.tooltip-show-github:hover::after { 
+  display: block; /* Show the tooltip when hovering over the button */ 
+} 

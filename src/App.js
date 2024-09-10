@@ -27,10 +27,6 @@ function App() {
     {url:Cpic,name:"C"},
   ];
   const [skillsState,setSkillsStatte] = useState(skillsList);
-  const projectsList = [{imageUrl:GITpic,url:"https://github.com/HossamAh/ReactJsSimpleCalculator",name:"calculator App", descripion:"simple reactjs calculator project with simple operations"},
-  {imageUrl:Pythonpic,url:"https://github.com/HossamAh/Complete-Restaurant-project-",name:"calculator App", descripion:"simple reactjs calculator project with simple operations"},
-  ];
-  const [projectsState,setProjectsStatte] = useState(projectsList);
   return (
     <div className="App">
       <header className="App-header">
@@ -46,7 +42,7 @@ function App() {
             <Route path='/' element={<HomePage/>}/>
             <Route path='/AboutMe' element={<AboutMe/>}/>
             <Route path='/Skills' element={<Skills skillsList={skillsState}/>}/>
-            <Route path='/Projects' element={<Projects projectsList={projectsState}/>}/>
+            <Route path='/Projects' element={<Projects/>}/>
           </Routes>
         </main>
     </div>
