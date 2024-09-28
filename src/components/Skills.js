@@ -4,7 +4,7 @@ const Skills = ({ skillsList = [] }) => {
     return (
         <div className="skills-section">
             <div className="Skills-container">
-                <div ><Link to={'/'} className="skills-close hover-target" /></div>
+                <div ><Link to={'/portfolio/'} className="skills-close hover-target" /></div>
                 <h2>Technical Skills</h2>
                 <div className="Skills-grid">
                     {skillsList.map((skill) => {

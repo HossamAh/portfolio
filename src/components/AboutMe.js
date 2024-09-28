@@ -1,17 +1,45 @@
-import { BrowserRouter, Link, Route, Router,Routes,Switch } from "react-router-dom";
-import SocialMediaNav from "./SocialMediaNav";
-
+import laptopImg from '../Assets2/aboutimg.png'
+import Particle from "./Particle";
+import { Container,Row,Col } from "react-bootstrap";
+import AboutCard from "./AboutCard";
+import TechSkills from './TechSkills';
 export default function AboutMe() {
     return (
-        <div className="about-section">
-            <div className="container">
-                <div ><Link to={'/'} className="about-close hover-target"/></div>
-                <div className="row">
-                    <div className="col">
-                            <h3>About me</h3>
-                    </div>
-                </div>
-                <div className="row">
+        <Container fluid className="about-section">
+            <Particle />
+            <Row style={{ justifyContent: "center", padding: "5px" }}>
+                <Col
+                    md={7}
+                    style={{
+                        justifyContent: "center",
+                        paddingTop: "20px",
+                        paddingBottom: "50px",
+                    }}
+                >
+                    <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+                        Know Who <strong className="purple">I'M</strong>
+                    </h1>
+                    <AboutCard />
+                </Col>
+                <Col
+                    md={5}
+                    style={{ paddingTop: "120px", paddingBottom: "50px" }}
+                    className="about-img"
+                >
+                    <img src={laptopImg} alt="about" className="img-fluid" />
+                </Col>
+            </Row>
+            <Row style={{margin:"20px",justifyContent:"center"}}>
+                    <Col
+                    style={{justifyContent:"center"}}
+                    >
+                    <TechSkills/>
+
+                    </Col>
+
+                
+            </Row>
+            {/* <div className="row">
                     <div className="col">
                         <p><span>Hi, I'm Hossam Ahmed <span className="dancing">front-end developer</span> passionate about creating interactive Single page Applications (SAP).</span></p>
                     </div>
@@ -34,7 +62,7 @@ export default function AboutMe() {
                     </div>
                     
                 </div>
-            </div>
-        </div>
+            </div>*/}
+        </Container>
     );
 }
