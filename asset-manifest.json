@@ -1,26 +1,27 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.65bcde29.css",
-    "main.js": "/portfolio/static/js/main.0c3b89f8.js",
-    "static/js/453.bb257cf5.chunk.js": "/portfolio/static/js/453.bb257cf5.chunk.js",
+    "main.css": "/portfolio/static/css/main.78c39be7.css",
+    "main.js": "/portfolio/static/js/main.952af196.js",
+    "static/js/453.9415623e.chunk.js": "/portfolio/static/js/453.9415623e.chunk.js",
     "static/media/restaurant-1.png": "/portfolio/static/media/restaurant-1.4351723359b5fe0eec5c.png",
+    "static/media/portfolio.png": "/portfolio/static/media/portfolio.15d4dd59b339595265fd.png",
     "static/media/me.jpeg": "/portfolio/static/media/me.8b7c2fb2495267a52a62.jpeg",
     "static/media/hossamahmedResume.pdf": "/portfolio/static/media/hossamahmedResume.95e7c17832d165827082.pdf",
+    "static/media/home-main.svg": "/portfolio/static/media/home-main.541f8179af8209ce03ccf2178fe62dbf.svg",
+    "static/media/aboutimg.png": "/portfolio/static/media/aboutimg.aee0f771fbfc1e7b8fa8.png",
     "static/media/restaurant-2.png": "/portfolio/static/media/restaurant-2.85e85cccb480aad3860a.png",
     "static/media/restaurant-3.png": "/portfolio/static/media/restaurant-3.cd5569f9bcf4c6b5213d.png",
     "static/media/calculator.png": "/portfolio/static/media/calculator.cbed7db631ca048d18c6.png",
-    "static/media/background.jpeg": "/portfolio/static/media/background.84a3bc6417e82cf370d5.jpeg",
-    "static/media/github-color-svgrepo-com.svg": "/portfolio/static/media/github-color-svgrepo-com.e35c71752b296aa276f4.svg",
-    "static/media/email-svgrepo-com.svg": "/portfolio/static/media/email-svgrepo-com.432a085edc24c2a8622d.svg",
-    "static/media/linkedin-svgrepo-com.svg": "/portfolio/static/media/linkedin-svgrepo-com.c341cc1c307221b0fe42.svg",
+    "static/media/home-bg.jpg": "/portfolio/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
+    "static/media/pre.svg": "/portfolio/static/media/pre.d4812f51c8c80976eaab.svg",
+    "static/media/express-js.svg": "/portfolio/static/media/express-js.13e4b3884f318c648bfe0207aa64c8dc.svg",
     "index.html": "/portfolio/index.html",
-    "static/media/close-circle-svgrepo-com (1).svg": "/portfolio/static/media/close-circle-svgrepo-com (1).96db005ea0dddf11cf1e.svg",
-    "main.65bcde29.css.map": "/portfolio/static/css/main.65bcde29.css.map",
-    "main.0c3b89f8.js.map": "/portfolio/static/js/main.0c3b89f8.js.map",
-    "453.bb257cf5.chunk.js.map": "/portfolio/static/js/453.bb257cf5.chunk.js.map"
+    "main.78c39be7.css.map": "/portfolio/static/css/main.78c39be7.css.map",
+    "main.952af196.js.map": "/portfolio/static/js/main.952af196.js.map",
+    "453.9415623e.chunk.js.map": "/portfolio/static/js/453.9415623e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.65bcde29.css",
-    "static/js/main.0c3b89f8.js"
+    "static/css/main.78c39be7.css",
+    "static/js/main.952af196.js"
   ]
 }
