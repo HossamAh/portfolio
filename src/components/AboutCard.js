@@ -8,7 +8,7 @@ import {
 } from "react-icons/ai";
 function AboutCard() {
   return (
-    <Card className="card-view">
+    <Card className="About-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>

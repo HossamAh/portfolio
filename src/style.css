@@ -484,7 +484,7 @@ button:focus {
   padding-bottom: 50px ;
   padding-left: 25px ;
   padding-right: 25px ;
-  height: auto ;
+  height: 100% !important;
 }
 
 .project-card-view {
@@ -499,66 +499,6 @@ button:focus {
   transform: scale(1.02) ;
   overflow: hidden ;
   box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) ;
-}
-
-.blog-card {
-  padding-top: 50px ;
-  padding-bottom: 50px ;
-  padding-left: 25px ;
-  padding-right: 25px ;
-  height: auto ;
-}
-
-.card-view {
-  background-color: transparent !important;
-  box-shadow: 0 3px 3px 2px rgba(145, 77, 161, 0.459) !important;
-  color: white !important;
-  transition: all 0.5s ease 0s !important;
-  height: 100% !important;
-  margin: 10px;
-}
-
-.blog-link {
-  color: white ;
-  text-decoration: none ;
-}
-
-.blog-link:hover {
-  cursor: pointer ;
-}
-
-.blog-card-view:hover {
-  transform: scale(1.02) ;
-  overflow: hidden ;
-  box-shadow: 0 3px 3px 5px rgba(155, 88, 173, 0.65) ;
-}
-
-.card-img-top {
-  padding: 20px ;
-  opacity: 0.8 ;
-  border-radius: 10px ;
-}
-
-.blog-img {
-  padding: 0px ;
-  opacity: 0.8 ;
-  border-radius: 0px ;
-}
-
-.btn-primary {
-  color: #fff ;
-  background-color: #623686 ;
-  border-color: #623686 ;
-}
-
-.btn-primary:hover {
-  color: #fff ;
-  background-color: #6d20c5d7 ;
-  border-color: #6d20c5d7 ;
-}
-.btn:focus {
-  outline: none ;
-  box-shadow: none ;
 }
 .project-heading {
   color: white ;
@@ -587,6 +527,11 @@ button:focus {
   background-image: var(--section-background-color) ;
   color: white ;
   text-align: center;
+  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) ;
+}
+.About-card-view{
+  background-color: transparent !important;
+  color: white !important;
   box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) ;
 }
 .tech-icons {
