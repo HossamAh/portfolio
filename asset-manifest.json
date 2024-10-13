@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.2245aa48.css",
-    "main.js": "/portfolio/static/js/main.dc071682.js",
+    "main.css": "/portfolio/static/css/main.adb78873.css",
+    "main.js": "/portfolio/static/js/main.10cb04af.js",
     "static/js/453.9415623e.chunk.js": "/portfolio/static/js/453.9415623e.chunk.js",
     "static/media/CAN_Run_interrupt.png": "/portfolio/static/media/CAN_Run_interrupt.df70c8cd77491288da8d.png",
     "static/media/DMA_UART_RUN.png": "/portfolio/static/media/DMA_UART_RUN.543e6b20b256d5866075.png",
+    "static/media/calc.png": "/portfolio/static/media/calc.c0c7f3f5a0cdc9fe95ec.png",
     "static/media/restaurant-1.png": "/portfolio/static/media/restaurant-1.4351723359b5fe0eec5c.png",
     "static/media/portfolio.png": "/portfolio/static/media/portfolio.15d4dd59b339595265fd.png",
     "static/media/AUTOSARproject.png": "/portfolio/static/media/AUTOSARproject.d7f66ce005bbb8e08aef.png",
@@ -15,17 +16,18 @@
     "static/media/restaurant-2.png": "/portfolio/static/media/restaurant-2.85e85cccb480aad3860a.png",
     "static/media/restaurant-3.png": "/portfolio/static/media/restaurant-3.cd5569f9bcf4c6b5213d.png",
     "static/media/SmartGarageprotues.png": "/portfolio/static/media/SmartGarageprotues.d66ead5def67e92eb1d2.png",
+    "static/media/QuaranApplication.png": "/portfolio/static/media/QuaranApplication.9e692e783e089ed8ec16.png",
     "static/media/calculator.png": "/portfolio/static/media/calculator.cbed7db631ca048d18c6.png",
     "static/media/home-bg.jpg": "/portfolio/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
     "static/media/pre.svg": "/portfolio/static/media/pre.d4812f51c8c80976eaab.svg",
     "static/media/express-js.svg": "/portfolio/static/media/express-js.13e4b3884f318c648bfe0207aa64c8dc.svg",
     "index.html": "/portfolio/index.html",
-    "main.2245aa48.css.map": "/portfolio/static/css/main.2245aa48.css.map",
-    "main.dc071682.js.map": "/portfolio/static/js/main.dc071682.js.map",
+    "main.adb78873.css.map": "/portfolio/static/css/main.adb78873.css.map",
+    "main.10cb04af.js.map": "/portfolio/static/js/main.10cb04af.js.map",
     "453.9415623e.chunk.js.map": "/portfolio/static/js/453.9415623e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2245aa48.css",
-    "static/js/main.dc071682.js"
+    "static/css/main.adb78873.css",
+    "static/js/main.10cb04af.js"
   ]
 }
