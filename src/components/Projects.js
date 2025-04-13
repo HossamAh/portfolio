@@ -34,8 +34,8 @@ const Projects = () => {
         setProjectState(projectsState[(projectsIndex-1)>=0?(projectsIndex-1):(projectsState.length-1)]);
         console.log(projectsIndex);
     }
-    const projectsList = [{ imageUrl: [calcApp], url: "https://github.com/HossamAh/ReactJsSimpleCalculator", name: "calculator App", descripion: "simple reactjs calculator project with simple operations." },
-    { imageUrl: [restaurant1, restaurant2, restaurant3], url: "https://github.com/HossamAh/Complete-Restaurant-project-", name: "Restaurant App", descripion: "Restaurant webpage with multiple views in single page to include main page and about page and menu page" },
+    const projectsList = [{ id:1,imageUrl: [calcApp], url: "https://github.com/HossamAh/ReactJsSimpleCalculator", name: "calculator App", descripion: "simple reactjs calculator project with simple operations." },
+    { id:2,imageUrl: [restaurant1, restaurant2, restaurant3], url: "https://github.com/HossamAh/Complete-Restaurant-project-", name: "Restaurant App", descripion: "Restaurant webpage with multiple views in single page to include main page and about page and menu page" },
     
     ];
 

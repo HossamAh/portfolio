@@ -5,6 +5,9 @@ import restaurant2 from "../assets/images/restaurant-2.png"
 import restaurant3 from "../assets/images/restaurant-3.png"
 import calcApp from "../assets/images/calculator.png"
 import portfolio from "../assets/images/portfolio.png"
+import QuranApplication from "../assets/images/QuaranApplication.png"
+import Calc from "../assets/images/calc.png"
+import TODOS from "../assets/images/todos.png";
 import { Container, Row, Col } from "react-bootstrap";
 import Card from 'react-bootstrap/Card';
 import Nav from 'react-bootstrap/Nav';
@@ -19,13 +22,13 @@ import DMA_UART from "../assets/images/DMA_UART_RUN.png"
 // import SecureDoorLockSystem from "../assets/images/githubImage.jpeg"
 function ProjectGrid({ List }) {
     return (
-        <Row style={{ alignItems: "stretch" }}>
+        <Row  >
             {List.length<1?<h2 style={{textAlign:"center", color:"white"}}>No projects Available</h2>:null}
             {List.map((Project) => {
                 return (
-                    <Col className="project-card"
-                        md={4}
-                        xs={4}
+                    <Col key={Project.id} className="project-card"
+                        md={6}
+                        xs={12}
                     >
                         <Card className="project-card-view" style={{ backgroundColor: "transparent", color: "white" }}>
                             <Card.Body style={{ justifyContent: "center" }}>
@@ -50,18 +53,18 @@ function ProjectGrid({ List }) {
 }
 
 function ProjectsSet() {
-    const projectsList = [{ imageUrl: [calcApp],liveDemo:"", Git: "https://github.com/HossamAh/ReactJsSimpleCalculator", name: "calculator App", descripion: "simple reactjs calculator project with simple operations.", type: "Web" },
-    { imageUrl: [restaurant1, restaurant2, restaurant3],liveDemo:"https://hossamah.github.io/Complete-Restaurant-project-/", Git: "https://github.com/HossamAh/Complete-Restaurant-project-", name: "Restaurant App", descripion: "Restaurant webpage with multiple views in single page to include main page and about page and menu page", type: "Web" },
-    { imageUrl: [CANCaseStudy],liveDemo:"", Git: "https://github.com/HossamAh/CAN_CaseStudy", name: "CAN CaseStudy", descripion: "CAN Project to test CAN Loopback mode in both modes polling and interrupt mode", type: "Embedded" },
-    { imageUrl: [portfolio],liveDemo:"https://hossamah.github.io/portfolio/", Git: "https://github.com/HossamAh/portfolio", name: "My portfolio", descripion: "portfolio based on react", type: "Web" },
-    { imageUrl: [AUTOSAR],liveDemo:"", Git: "https://github.com/HossamAh/DoorLockIndication_SWAL_OS", name: "DoorLockIndication_AUTOSAR", descripion: "AUTOSAR project that gets Door Lock Status and Accordingly taking Action to LED.", type: "Embedded" },
-    { imageUrl: [DMA_UART],liveDemo:"", Git: "https://github.com/HossamAh/secure-communication-with-DMA", name: "secure communication with DMA", descripion: "project developed gateway like ECU that receive messages from inside the network and encrypt it to send to other networks and recevie encrypted messages from outside then decrypt them to send them to the inside network using RSA for encryption and decryption", type: "Embedded" },
-    { imageUrl: [SmartGarage],liveDemo:"", Git: "https://github.com/HossamAh/Smart-Garage-System-ARM", name: "Smart Garage System", descripion: "Smart Garage system using 2 ARM ECU to monitor garage slots and its door logic", type: "Embedded" },
-    // { imageUrl: [SecureDoorLockSystem],liveDemo:"", Git: "https://github.com/HossamAh/SecureDoorLockingSystem", name: "Secure Door Locking System", descripion: "https://github.com/HossamAh/SecureDoorLockingSystem", type: "Embedded" },
-    // { imageUrl: [portfolio],liveDemo:"https://hossamah.github.io/portfolio/", Git: "https://github.com/HossamAh/portfolio", name: "My portfolio", descripion: "portfolio based on react", type: "Web" },
-    // { imageUrl: [portfolio],liveDemo:"https://hossamah.github.io/portfolio/", Git: "https://github.com/HossamAh/portfolio", name: "My portfolio", descripion: "portfolio based on react", type: "Web" },
-    // { imageUrl: [portfolio],liveDemo:"https://hossamah.github.io/portfolio/", Git: "https://github.com/HossamAh/portfolio", name: "My portfolio", descripion: "portfolio based on react", type: "Web" },
-    // { imageUrl: [portfolio],liveDemo:"https://hossamah.github.io/portfolio/", Git: "https://github.com/HossamAh/portfolio", name: "My portfolio", descripion: "portfolio based on react", type: "Web" },
+    const projectsList = [
+    { id:10,imageUrl: [TODOS],liveDemo:"https://todo-list-app-kohl-kappa.vercel.app/", Git: "https://github.com/HossamAh/todo-list-app", name: "Full-Stack Todo App", descripion: "A secure MERN-based task manager with user authentication and protected CRUD operations.", type: "Web" },
+    {id:1, imageUrl: [calcApp],liveDemo:"", Git: "https://github.com/HossamAh/ReactJsSimpleCalculator", name: "calculator App", descripion: "simple reactjs calculator project with simple operations.", type: "Web" },
+    { id:2,imageUrl: [restaurant1, restaurant2, restaurant3],liveDemo:"https://hossamah.github.io/Complete-Restaurant-project-/", Git: "https://github.com/HossamAh/Complete-Restaurant-project-", name: "Restaurant App", descripion: "Restaurant webpage with multiple views in single page to include main page and about page and menu page", type: "Web" },
+    // { id:3,imageUrl: [CANCaseStudy],liveDemo:"", Git: "https://github.com/HossamAh/CAN_CaseStudy", name: "CAN CaseStudy", descripion: "CAN Project to test CAN Loopback mode in both modes polling and interrupt mode", type: "Embedded" },
+    { id:4,imageUrl: [portfolio],liveDemo:"https://hossamah.github.io/portfolio/", Git: "https://github.com/HossamAh/portfolio", name: "My portfolio", descripion: "portfolio based on react", type: "Web" },
+    // { id:5,imageUrl: [AUTOSAR],liveDemo:"", Git: "https://github.com/HossamAh/DoorLockIndication_SWAL_OS", name: "DoorLockIndication_AUTOSAR", descripion: "AUTOSAR project that gets Door Lock Status and Accordingly taking Action to LED.", type: "Embedded" },
+    // { id:6,imageUrl: [DMA_UART],liveDemo:"", Git: "https://github.com/HossamAh/secure-communication-with-DMA", name: "secure communication with DMA", descripion: "project developed gateway like ECU that receive messages from inside the network and encrypt it to send to other networks and recevie encrypted messages from outside then decrypt them to send them to the inside network using RSA for encryption and decryption", type: "Embedded" },
+    // { id:7,imageUrl: [SmartGarage],liveDemo:"", Git: "https://github.com/HossamAh/Smart-Garage-System-ARM", name: "Smart Garage System", descripion: "Smart Garage system using 2 ARM ECU to monitor garage slots and its door logic", type: "Embedded" },
+    { id:8,imageUrl: [QuranApplication],liveDemo:"https://hossamah.github.io/MediaPlayer/", Git: "https://github.com/HossamAh/MediaPlayer", name: "Quran Web application", descripion: "Quran Web application that use isalamic API to fetch quran surahs list and retreive the surahs as an audio and text of each ayah. using HTML,CSS,Javascript and FetchAPI", type: "Web" },
+    { id:9,imageUrl: [Calc],liveDemo:"https://hossamah.github.io/CalculatorWeb/", Git: "https://github.com/HossamAh/CalculatorWeb", name: "Simple Arithmatic Calculator", descripion: "Simple calculator using HTML,CSS,Javascript", type: "Web" },
+    
     ];
 
     const [currentList, setCurrentList] = useState([]);
@@ -74,15 +77,15 @@ function ProjectsSet() {
         else if (contentState === "Web") {
             setCurrentList(projectsList.filter((project) => { return project.type === "Web" }));
         }
-        else if (contentState === "Embedded") {
-            setCurrentList(projectsList.filter((project) => { return project.type === "Embedded" }));
-        }
+        // else if (contentState === "Embedded") {
+        //     setCurrentList(projectsList.filter((project) => { return project.type === "Embedded" }));
+        // }
         else { }
     }, [contentState]);
 
     return (
         <Card className="projects-grid">
-            <Card.Header style={{ boxShadow: "0 4px 5px 3px rgba(119, 53, 136, 0.459)" }}>
+            {/* <Card.Header style={{ boxShadow: "0 4px 5px 3px rgba(119, 53, 136, 0.459)" }}>
                 <Nav style={{ justifyContent: "center" }} variant="tabs" defaultActiveKey="#all">
                     <Nav.Item>
                         <Nav.Link  onClick={() => { setContentState("All") }}>All</Nav.Link>
@@ -94,7 +97,7 @@ function ProjectsSet() {
                         <Nav.Link onClick={() => { setContentState("Embedded") }}>Embedded</Nav.Link>
                     </Nav.Item>
                 </Nav>
-            </Card.Header>
+            </Card.Header> */}
             <Card.Body>
                 <Card.Text>
                     <Container fluid >

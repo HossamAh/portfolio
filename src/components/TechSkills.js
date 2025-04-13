@@ -12,6 +12,8 @@ import {
     DiHtml5,
     DiCss3,
     DiBootstrap,
+    DiMysql
+    
 } from "react-icons/di";
 
 import {
@@ -19,6 +21,7 @@ import {
     SiFirebase,
     SiNextdotjs,
     SiPostgresql,
+    SiTailwindcss
 } from "react-icons/si";
 import expressJs from '../Assets2/express-js.svg'
 export default function TechSkills() {
@@ -26,6 +29,7 @@ export default function TechSkills() {
         { icon: ()=><DiHtml5/>, name: "HTML5" },
         { icon: ()=><DiCss3/>, name: "CSS3" },
         { icon: ()=><DiReact/>, name: "ReactJs" },
+        { icon: ()=><SiTailwindcss/>, name: "TailwindCSS" },
         { icon: ()=><DiBootstrap/>, name: "Bootstrap" },
         { icon: ()=><DiGit/>, name: "GIT" },
         { icon: ()=><DiPython/>, name: "Python" },
@@ -36,10 +40,11 @@ export default function TechSkills() {
         { icon: ()=><DiMongodb/>, name: "MongoDb" },
         { icon: ()=><DiNodejs/>, name: "NodeJs" },
         { icon: ()=><SiPostgresql/>, name: "postgresql" },
+        { icon: ()=><DiMysql/>, name: "Mysql" },
         { icon: ()=><img src={expressJs} alt="expressjs"/>, name: "ExpressJs" },
         ];
     return (
-        <Container fluid className="skills-section">
+        <Container fluid className="skills-section" id="skills-section">
             <Row style={{justifyContent:"center"}}>
             <h1 className="project-heading">
             Technical <strong className="purple">Skillset </strong>

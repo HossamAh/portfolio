@@ -28,9 +28,9 @@ function NavBar() {
 
     return (
         <Navbar
-            expanded={expand}
+            expanded={expand}//to determine the state when collapsed whether expanded or not ,we bind it to the toggler
             fixed="top"
-            expand="md"
+            expand="md"//breakpoint of collapse
             className={navColour ? "sticky" : "navbar"}
         >
             <Container>

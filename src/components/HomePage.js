@@ -6,11 +6,22 @@ import Home2 from "./Home2";
 import Type from "./Type";
 
 export default function HomePage() {
+    const handleClick = (anchor) => () => {
+        console.log("handle click")
+        const id = `${anchor}-section`;
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+            });
+        }
+        };
     return (
-        <section>
+        <section style={{position:"relative" , zIndex:"0"}}>
             <Container fluid className="home-section" id="home">
                 {/* white particles in backgroud */}
-                <Particle />
+                <Particle/>
                 <Container className="home-content">
                     <Row>
                         <Col md={7} className="home-header">
@@ -23,7 +34,9 @@ export default function HomePage() {
 
                             <h1 className="heading-name">
                                 I'M
+                                <a  onClick={handleClick("about")}>
                                 <strong className="main-name"> HOSSAM AHMED</strong>
+                                </a>
                             </h1>
 
                             <div style={{ padding: 50, textAlign: "left" }}>

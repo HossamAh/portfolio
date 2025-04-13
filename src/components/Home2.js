@@ -8,11 +8,11 @@ import {
   AiOutlineTwitter,
   AiFillInstagram,
 } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn ,FaEnvelope} from "react-icons/fa";
 
 function Home2() {
   return (
-    <Container fluid className="home-about-section" id="about">
+    <Container fluid className="home-about-section" id="about-section" >
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
@@ -87,6 +87,16 @@ function Home2() {
                   <FaLinkedinIn />
                 </a>
               </li>
+              <li className="social-icons">
+              <a
+                href="mailto: hossam.ibrahem.998@gmail.com"
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="icon-colour  home-social-icons"
+              >
+                <FaEnvelope />
+              </a>
+            </li>
             </ul>
           </Col>
         </Row>
