@@ -6,7 +6,7 @@ import restaurant3 from "../assets/images/restaurant-3.png"
 import calcApp from "../assets/images/calculator.png"
 import { Container,Row,Col } from "react-bootstrap";
 import Particle from "./Particle";
-import ProjectsSet from "./ProjectsSet";
+import ProjectsSet from "./projectsSet";
 const Projects = () => {
     function handleClick(e) {
         window.open(Project.url, '_blank');
