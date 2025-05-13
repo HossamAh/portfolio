@@ -24,12 +24,11 @@ function AboutCard() {
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am <span className="purple">Hossam Ahmed.</span>
-            I am fresh software engineer,A frontend developer
-            specialized in React.
+            I am software engineer,A MERN Stack developer alongside with strong experience in laravel.
             <br />
             I am a <span className="purple">Computer Engineering graduate </span> from <span className="purple">Faculty of engineering Cairo unviersity</span>
             <b />
-            with experience and <a href="#skills-section" onClick={handleClick("skills")}><span className="purple">skills</span></a> in both <span className="purple">embedded systems and front-end development.</span>
+            with experience and <a href="#skills-section" onClick={handleClick("skills")}><span className="purple">skills</span></a> in both <span className="purple">embedded systems and full-stack development.</span>
             <br />
             I have a strong background in developing innovative solutions in areas such as <span className="purple">embedded systems and web development.</span>
             <br />
