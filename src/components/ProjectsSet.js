@@ -8,6 +8,9 @@ import portfolio from "../assets/images/portfolio.png"
 import QuranApplication from "../assets/images/QuaranApplication.png"
 import Calc from "../assets/images/calc.png"
 import TODOS from "../assets/images/todos.png";
+import ArabTone from "../assets/images/ArabTone.png";
+import Prameg from "../assets/images/Prameg.png";
+import Amnco from "../assets/images/Amnco.png";
 import { Container, Row, Col } from "react-bootstrap";
 import Card from 'react-bootstrap/Card';
 import Nav from 'react-bootstrap/Nav';
@@ -55,7 +58,10 @@ function ProjectGrid({ List }) {
 function ProjectsSet() {
     const projectsList = [
     { id:10,imageUrl: [TODOS],liveDemo:"https://todo-list-app-kohl-kappa.vercel.app/", Git: "https://github.com/HossamAh/todo-list-app", name: "Full-Stack Todo App", descripion: "A secure MERN-based task manager with user authentication and protected CRUD operations.", type: "Web" },
-    {id:1, imageUrl: [calcApp],liveDemo:"", Git: "https://github.com/HossamAh/ReactJsSimpleCalculator", name: "calculator App", descripion: "simple reactjs calculator project with simple operations.", type: "Web" },
+    {id:11, imageUrl: [ArabTone],liveDemo:"https://arabtone-sa.com/", Git: "", name: "ArabTone", descripion: "arabtone website with laravel , Filament Resourses , livewire components , blade views with tailwindCSS styles and MySql for database ", type: "Web" },
+    {id:12, imageUrl: [Prameg],liveDemo:"https://next.prameg.net/", Git: "", name: "Prameg", descripion: "Prameg Company website (currently work at) with laravel , Filament Resourses , livewire components , blade views with tailwindCSS styles and MySql for database ", type: "Web" },
+    {id:13, imageUrl: [Amnco],liveDemo:"https://amnco.com/", Git: "", name: "Amnco", descripion: "Amnco website with laravel , Filament Resourses , livewire components , blade views with tailwindCSS styles and MySql for database ", type: "Web" },
+    
     { id:2,imageUrl: [restaurant1, restaurant2, restaurant3],liveDemo:"https://hossamah.github.io/Complete-Restaurant-project-/", Git: "https://github.com/HossamAh/Complete-Restaurant-project-", name: "Restaurant App", descripion: "Restaurant webpage with multiple views in single page to include main page and about page and menu page", type: "Web" },
     // { id:3,imageUrl: [CANCaseStudy],liveDemo:"", Git: "https://github.com/HossamAh/CAN_CaseStudy", name: "CAN CaseStudy", descripion: "CAN Project to test CAN Loopback mode in both modes polling and interrupt mode", type: "Embedded" },
     { id:4,imageUrl: [portfolio],liveDemo:"https://hossamah.github.io/portfolio/", Git: "https://github.com/HossamAh/portfolio", name: "My portfolio", descripion: "portfolio based on react", type: "Web" },
